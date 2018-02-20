@@ -5,7 +5,7 @@ The reason I picked discord.py over Disco is mainly the community, Disco is a bi
 ## Requirements
 Alright, let’s go over our requirements really quick. There are a small number of things we might need. And we will go over most of the possibilities as best as I can.
 A discord token
-First, we need a bot to connect to. This can be done by going to the ![developer page (click me)](https://discordapp.com/developers/applications/me) of discord. Click the link, and we will go 
+First, we need a bot to connect to. This can be done by going to the [developer page (click me)](https://discordapp.com/developers/applications/me) of discord. Click the link, and we will go 
  
  ![](https://i.imgur.com/qtctRTL.png)
  
