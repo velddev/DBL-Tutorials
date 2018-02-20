@@ -5,16 +5,26 @@ The reason I picked discord.py over Disco is mainly the community, Disco is a bi
 ## Requirements
 Alright, let’s go over our requirements really quick. There are a small number of things we might need. And we will go over most of the possibilities as best as I can.
 A discord token
-First, we need a bot to connect to. This can be done by going to the !(developer page (click me))[https://discordapp.com/developers/applications/me] of discord. Click the link, and we will go 
+First, we need a bot to connect to. This can be done by going to the ![developer page (click me)](https://discordapp.com/developers/applications/me) of discord. Click the link, and we will go 
+ 
+ ![](https://i.imgur.com/qtctRTL.png)
+ 
+ ![](https://i.imgur.com/Am6ZvfK.png)
  
 Now, scroll slightly down, and press this button
+ 
+ ![](https://i.imgur.com/9R6YAPs.png)
  
 Now, that you have a bot user, press the reveal token. Keep this somewhere safe because this is your bot’s very own discord password!
 Now lets invite our bot to a discord server!
 https://discordapp.com/oauth2/authorize?&client_id= YOUR CLIENT ID &scope=bot
 if everything went wel, it should look like this
  
+ ![](https://i.imgur.com/KQ1kfY2.png)
+ 
 Pick the server you so desire the bot to be on, and press Authorize. This will automatically add the bot to your guild 
+
+![](https://i.imgur.com/GrJnUut.png)
 
 ## Python
 Of course, to start it off, we need Python. ( https://www.python.org/downloads/release/python-364/ ) Simply download the one you need Windows or Mac links will be available here, for Linux distributions, check the website. Listed here
@@ -23,11 +33,27 @@ If you’re completely new to python, you might want to get a refresher as well.
 There are a handful of editors available for Python, but for now I’d recommend going with PyCharm, as the tutorial will work with that.
 https://www.jetbrains.com/pycharm/
 
+![](https://i.imgur.com/xSAHcQo.png)
+![](https://i.imgur.com/occi4hU.png)
+![](https://i.imgur.com/1eVLDCb.png)
+![](https://i.imgur.com/w4l3Ksc.png)
+![](https://i.imgur.com/SmABPOw.png)
+![](https://i.imgur.com/AfcNLZR.png)
+![](https://i.imgur.com/ctwUNTp.png)
+![](https://i.imgur.com/dHIUTz4.png)
+![](https://i.imgur.com/ulpzvmW.png)
+![](https://i.imgur.com/zXd4g4n.png)
+
 -- we're ready
        
 ```
 print(“Hello World!”)
 ```
+
+![](https://i.imgur.com/dHIUTz4.png)
+![](https://i.imgur.com/ulpzvmW.png)
+![](https://i.imgur.com/zXd4g4n.png)
+![](https://i.imgur.com/RBDwiW4.png)
 
 Now that our set up is done, lets dig in the code. First we want to make a client to connect to the discord API, we can do this with the following code:
 
@@ -45,6 +71,8 @@ client.run('my token here!')
 
 Alright, lets test what we got so far! Run the bot and if everything went as planned, you should see this appear in your command line!
  
+![](https://i.imgur.com/HPY2WJG.png)
+ 
 Next up, we should probably get some sort of message handler, for that we can make another client.event, for messages this time!
 With this message event, we will make it respond to the line “Hello”. So we want a check to see if our incoming message starts with hello, we can do this by using if statements, also known as branches. If the message is indeed “Hello” we want it to respond with something, get creative for the response 😊
 
@@ -57,6 +85,8 @@ async def on_message(message):
 
 Ok, lets run it again just like before, and see if our bot responds!
  
+![](https://i.imgur.com/igTTLOE.png)
+ 
 But, we have one small issue now. If we type in “hello” it won’t respond, to fix this we want to change this line
 
 ```py
@@ -67,3 +97,4 @@ if message.content.lower().startswith('hello'):
 
 and with this little bit of extra code, we can now see that our bot responds to any kind of “hello”
  
+![](https://i.imgur.com/2Rj0SaL.png)
