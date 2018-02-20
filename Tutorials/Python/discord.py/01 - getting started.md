@@ -7,6 +7,8 @@ Alright, let’s go over our requirements really quick. There are a small number
 A discord token
 First, we need a bot to connect to. This can be done by going to the [developer page (click me)](https://discordapp.com/developers/applications/me) of discord. Click the link, and we will go 
  
+ ![](https://i.imgur.com/V19wk5w.png)
+ 
  ![](https://i.imgur.com/qtctRTL.png)
  
  ![](https://i.imgur.com/Am6ZvfK.png)
