@@ -25,10 +25,13 @@ https://www.jetbrains.com/pycharm/
 
 -- we're ready
        
-Code: print(“Hello World!”)
-
+```
+print(“Hello World!”)
+```
 
 Now that our set up is done, lets dig in the code. First we want to make a client to connect to the discord API, we can do this with the following code:
+
+```py
 import discord
 
 client = discord.Client()
@@ -38,20 +41,25 @@ async def on_ready():
     print(‘Hello World, signing in from {}’.format(client.user.name))
 
 client.run('my token here!')
+```
 
 Alright, lets test what we got so far! Run the bot and if everything went as planned, you should see this appear in your command line!
  
 Next up, we should probably get some sort of message handler, for that we can make another client.event, for messages this time!
 With this message event, we will make it respond to the line “Hello”. So we want a check to see if our incoming message starts with hello, we can do this by using if statements, also known as branches. If the message is indeed “Hello” we want it to respond with something, get creative for the response 😊
+
+```py
 @client.event
 async def on_message(message):
     if message.content.startswith('Hello'):
         client.send_message(message.channel, 'Hey, how are you?')
+```
 
 Ok, lets run it again just like before, and see if our bot responds!
  
 But, we have one small issue now. If we type in “hello” it won’t respond, to fix this we want to change this line
-```
+
+```py
 if message.content.startswith('Hello'):
 
 if message.content.lower().startswith('hello'):
