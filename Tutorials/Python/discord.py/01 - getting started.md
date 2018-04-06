@@ -1,5 +1,5 @@
 # Getting started with your first discord bot
-Hello, and today I’m showing you how to write and set up a Discord bot in discord.py. This tutorial will be friendly for programmers of any level as long as you know your basics in any language.
+Hello, and today I’m showing you how to write and set up a Discord bot in discord.py. This tutorial will be friendly for programmers of any level as long as you know your basics in any language, if you feel a little 
 ## Why Discord.py?
 The reason I picked discord.py over Disco is mainly the community, Disco is a bit tougher to get support for. Another reason is that discord.py is a lot more mature at this moment.
 ## Requirements
@@ -13,7 +13,7 @@ First, we need a bot to connect to. This can be done by going to the [developer 
  
  ![](https://i.imgur.com/Am6ZvfK.png)
  
-Now, scroll slightly down, and press this button
+Now, scroll slightly down, and press this button. This button will create a bot user with a user ID and a bot token, those can be used to either create an invite to your bot or to log in to your bot with the API!
  
  ![](https://i.imgur.com/9R6YAPs.png)
  
